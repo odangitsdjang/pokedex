@@ -17,3 +17,11 @@ export const fetchAllPokemon = dispatch => {
     pokemons => dispatch(receivePokemons(pokemons))
   );
 };
+
+export const fetchPokemon = (id) => dispatch => {
+  APIUtil.fetchPokemon(id).then(
+    pokemon => {
+      dispatch(receivePokemon(pokemon));
+    }
+  );
+};

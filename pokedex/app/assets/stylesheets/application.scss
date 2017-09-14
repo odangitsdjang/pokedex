@@ -57,7 +57,7 @@
          border-radius: 4px;
          color: $grey;
          font-weight: 700;
-         display: block;
+         display: inline-block;
          padding: 15px;
          text-decoration: none;
          text-transform: uppercase;
@@ -92,6 +92,7 @@
  #root {
    height: 100%;
    padding-top: 20px;
+   display: flex;
  }
 
  h2 {
@@ -103,3 +104,9 @@
    text-align: center;
    color: $black;
  }
+
+.index {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}

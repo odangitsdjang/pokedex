@@ -6,4 +6,10 @@ export default class APIUtil {
     });
   }
 
+  static fetchPokemon(id) {
+    return $.ajax({
+      url: `/api/pokemon/${id}`
+    });
+  }
+
 }
