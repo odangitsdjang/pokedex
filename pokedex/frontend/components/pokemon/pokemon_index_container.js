@@ -5,7 +5,8 @@ import { fetchAllPokemon } from '../../actions/pokemon_actions';
 import PokemonIndex from './pokemon_index';
 
 const mapStateToProps = state => ({
-  pokemons: selectAllPokemon(state)
+  pokemons: selectAllPokemon(state),
+  loading: state.loading
 });
 
 const mapDispatchToProps = dispatch => ({

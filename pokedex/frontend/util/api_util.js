@@ -12,4 +12,18 @@ export default class APIUtil {
     });
   }
 
+  static createPokemon(data) {
+    return $.ajax({
+      method: 'POST',
+      url: '/api/pokemon',
+      data
+    });
+  }
+  static editPokemon(id, data) {
+    return $.ajax({
+      method: "PATCH",
+      url: `/api/pokemon/${id}`,
+      data
+    });
+  }
 }
